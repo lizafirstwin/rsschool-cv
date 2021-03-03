@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <title>CV Lizaveta Yukhnevich</title>
+    <meta charset="utf-8">
+    <style>
+      * {
+        padding: 0; 
+        margin: 0;
+        box-sizing: border-box;
+        text-transform: none;
+      }
+
+      h1, 
+      h2, 
+      h3, 
+      ul, 
+      li { text-transform: uppercase; }
+
+      h2 { margin-top: 30px; }
+
+      h5 {
+        margin-top: 13px;
+        margin-bottom: 5px;
+        color: #888;
+      }
+
+      ul { list-style: none; }
+
+      code { font-size: 15px; }
+
+      body {
+        width: 100%;
+        height: 100%;
+        background-color: #c0c0c0;
+      }
+
+      main {
+        width: 90%;
+        margin: 20px auto;
+        background-color: black;
+      }
+
+      header {
+        display: flex;
+        height: 150px;
+        color: #fff;
+      }
+
+      header p{
+        margin: auto;
+        font-size: 15px;
+        text-transform: uppercase;
+      }
+
+      header h1 {
+        padding: 20px 50px;
+        margin: auto;
+        margin-top: 40px;
+        border: 2px solid #f0e68c;
+      }
+
+      .aboutMe {
+        width: 50%;          
+        background-color: #f0e68c;
+      }
+
+      .aboutMe img{ width: 100%; }
+
+      .lineAboutMe{
+        position: relative;
+        top: -22px;
+        width: 60%;
+        height: 20px;
+        padding-left: 30px;
+        background-color: black;
+        color: #fff;
+      }
+
+      .skills, 
+      .languages { margin-left: 15%; }
+
+      .skills h2, 
+      .languages h2{ margin-top: 40px; }
+
+      .skills > ul, 
+      .languages > ul { margin-top: 10px; }
+
+      .skills > ul > li, 
+      .languages > ul > li{
+        margin-bottom: 5px;
+        font-size: 16px;
+      }
+
+      footer{
+        width: 100%;
+        background-color: black;
+      }
+
+      footer .icons{
+        display: flex;
+        justify-content: space-between;
+        width: 45%;
+        margin: auto;
+      }
+
+      footer img{
+        height: 25px;
+        margin: 20px;
+      }
+      footer p {
+        width: 20px;
+        height: 25px;
+        margin: auto;
+        font-size: 11px;
+        color: #888;
+      }
+
+      #rss-icon{ background-color: #fff; }
+
+      .mainBlock{
+        display: flex;
+        background-color: #fff;
+      }
+
+      .info{
+        margin: 5px auto 15px auto;
+        color: black;
+      }
+
+      .info p{
+        margin-bottom: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+        <header>
+            <p>Junior Front-end developer</p>
+            <h1>Lizaveta Yukhnevich</h1>
+        </header>
+        <section class="mainBlock">
+            <article class="aboutMe">
+                <img src="photo.jpg" alt="Фотография">
+                <div class="lineAboutMe"><h3>About me</h3></div>
+                <div class="skills">
+                    <h2>skills</h2>
+                    <ul> 
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                <div class="languages">
+                    <h2>English</h2>
+                    <ul>
+                        <li>b1</li>
+                    </ul>
+                </div>
+            </article>
+            <article class="info">
+                <h2 class="infoText">Education</h2>
+                <h5>2018 - 2022</h5>
+                <p>BSUIR, Faculty of Engineering and Informatics</p>
+                <p>Information systems and technologies (in economics)</p>
+                <h2 class="infoText">Work Experience</h2>
+                <h2>Code Sample</h2>
+                <code>function transform(arr)
+                    <br>{
+                      <br> if(!Array.isArray(arr)) throw Error;
+                      <br>   let arr2 = [];
+                      <br> for(let i = 0; i arr.length; i++){		  	
+                      <br>  switch(arr[i]){
+                      <br>      case  '--double-next': 
+                      <br>       if(i == arr.length - 1) 
+                      <br> return arr2;
+                      <br>           else arr2.push(arr[i + 1]);
+                      <br>     break;
+                      <br>   case '--double-prev': 
+                      <br>       if(i == 0) ;
+                      <br>     else arr2.push(arr[i - 1])
+                      <br>     break;
+                      <br>   case '--discard-prev': 
+                      <br>       arr2.pop(arr[i]);
+                      <br>     break
+                      <br>   case '--discard-next':
+                      <br>     if(i == arr.length - 1) 
+                      <br> return arr2;
+                      <br>     if(arr[i + 2] == '--double-prev' 
+                      <br> || arr[i + 2] == '--discard-prev') 
+                      <br> i += 2;
+                      <br>       else i++;
+                      <br>       break;
+                      <br>   default: arr2.push(arr[i]);
+                      <br>       }
+                      <br> }
+                      <br>   return arr2;
+                    }
+                </code>
+            </article>
+        </section>
+        <footer>
+            <article class="icons">
+                <ul>
+                    <li>
+                        <a href="https://rs.school/js">
+                            <img id="rss-icon" src="https://rs.school/images/rs_school_js.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC578nebW2Mn-mNgjEArGZug">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/YouTube_full-color_icon_%282017%29.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/liza-first-twin/">
+                            <img class=" linkedIn" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Linkedin.svg" alt="">  
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="mailto:lyxnevich@gmail.com">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/New_Logo_Gmail.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="https://web.telegram.org/#/im?p=@lizafirstwin">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Telegram_2019_simple_logo.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            <p>2021</p>
+        </footer>
+    </main>
+  </body>
+</html>
